@@ -17,7 +17,7 @@ exports.handler = async function (event) {
 
   try {
     // Insert current time + 2 hours into the database
-    await connection.execute("INSERT INTO car (datetime_column) VALUES (DATE_ADD(NOW(), INTERVAL 2 HOUR))");
+    await connection.execute("INSERT INTO spotify (datetime_column) VALUES (DATE_ADD(NOW(), INTERVAL 2 HOUR))");
     await connection.end();
 
     return {
