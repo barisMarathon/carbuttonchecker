@@ -14,13 +14,21 @@
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
+        margin-top: 10px; /* Add spacing between buttons */
       }
     </style>
   </head>
   <body>
     <h1>Add Current Time to Database</h1>
+
+    <!-- First button -->
     <form action="/.netlify/functions/addCurrentTime" method="POST">
       <button type="submit">Add Current Time</button>
+    </form>
+
+    <!-- Second button -->
+    <form action="/.netlify/functions/addCurrentTime2" method="POST">
+      <button type="submit">Add Current Time 2</button>
     </form>
   </body>
 </html>
